@@ -42,7 +42,7 @@ func requestBaidu(reqType, reqURL string) (interface{}, error) {
 		}
 
 	} else {
-		return res, errors.New("请求百度API失败，状态码不等于200")
+		return res, errors.New("error")
 	}
 
 	return res, nil

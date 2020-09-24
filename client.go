@@ -1,4 +1,3 @@
-// Created by @menduo @ 2019-01-24
 package baiduMap
 
 import (
@@ -32,7 +31,7 @@ func (bc *BaiduMapClient) GetRoute(lat1, lng1, lat2, lng2 string) (*StructRoute,
 		return res, err
 	}
 	if res2.(*StructRoute).Status != 0 {
-		message := fmt.Sprintf("百度 API 报错：%s", res2.(*StructRoute).Message)
+		message := fmt.Sprintf("error：%s", res2.(*StructRoute).Message)
 		return res, errors.New(message)
 	}
 	res3 := res2.(*StructRoute)
