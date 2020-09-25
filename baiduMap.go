@@ -7,7 +7,7 @@ const (
 
 	reqURLForGEO string = "http://api.map.baidu.com/reverse_geocoding/v3/?ak="
 
-	reqURLForRoute string = "http://api.map.baidu.com/directionlite/v1/driving?coord_type=wgs84&"
+	reqURLForRoute string = "http://api.map.baidu.com/directionlite/v1/driving?coord_type=wgs84&ret_coordtype=gcj02&"
 )
 
 func GetAddressViaGEO(lat, lng string) (*StructGEOToAddress, error) {
